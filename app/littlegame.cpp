@@ -284,7 +284,7 @@ SH_BOOL sh_LittleGameTest(void)
     return TRUE;
 }
 
-static STDemoFun _astDevDemoFunc[] =
+static STDemoFun _astRiverDemoFunc[] =
 {
     {"river",0,1,0,(SHFunc)sh_LittleGameTest,LSTRING"sh_LittleGameTest\nno param\n"},
 };
@@ -295,9 +295,9 @@ void sh_LittleGameInit(void)
 {
     SH_U32 u32Idx;
 
-    for (u32Idx = 0;u32Idx < SIZEOF(_astDevDemoFunc) / SIZEOF(STDemoFun);u32Idx++)
+    for (u32Idx = 0;u32Idx < SIZEOF(_astRiverDemoFunc) / SIZEOF(STDemoFun);u32Idx++)
     {
-        SH_DemoMultiuserInsertCmd(_astDevDemoFunc + u32Idx);
+        SH_DemoMultiuserInsertCmd(_astRiverDemoFunc + u32Idx);
     }
 }
 
