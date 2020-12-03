@@ -1,4 +1,4 @@
-#include "sh_type.h"
+#include "sh_common.h"
 #include <string>
 #include <list>
 #include <termios.h>

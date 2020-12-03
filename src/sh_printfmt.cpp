@@ -7,7 +7,7 @@ static void _print_strandblank(char *str)
 {
     int i = 0;
     printf("\033[47;32m%-s\033[0m ",str);
-    for(;i < 32 - strlen(str);i++)
+    for(;i < 32 - (int)strlen(str);i++)
         printf(" ");
 }
 
