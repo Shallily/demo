@@ -18,11 +18,15 @@ READ_ELF    = readelf
 # Directories
 # **********************************************
 #cpp source files
-SRCCPP =    ./src \
-            ./sample
+SRCCPP =    ./core/common       \
+			./core/demo         \
+            ./sample            \
+            ./app
 
 # Header files
-INCDIR    = ./inc
+INCDIR    = ./core/common	    \
+			./core/common/inc   \
+			./core/demo/inc
 
 BINPATH   = bin
 OBJPATH   = obj
